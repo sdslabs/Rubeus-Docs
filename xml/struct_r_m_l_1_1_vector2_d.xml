@@ -1,0 +1,805 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="struct_r_m_l_1_1_vector2_d" kind="struct" language="C++" prot="public">
+    <compoundname>RML::Vector2D</compoundname>
+    <includes refid="rubeus__maths__library_8h" local="no">rubeus_maths_library.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_m_l_1_1_vector2_d_1ab5c3a92e55c53865ba1662ad2beb6ef2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RML::Vector2D::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+<para>The x coordinate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="41" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_m_l_1_1_vector2_d_1a05f39d7943bb201be12d409246fc7bae" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RML::Vector2D::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+<para>The y coordinate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="44" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_r_m_l_1_1_vector2_d_1a39ae4a2d20e822527b329683a2bf0dda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RML::Vector2D::Vector2D</definition>
+        <argsstring>()</argsstring>
+        <name>Vector2D</name>
+        <briefdescription>
+<para>Default constructor Initialises a <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> with (0,0) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="52" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_m_l_1_1_vector2_d_1ab7d29d20470e5557b17a84208275eab0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RML::Vector2D::Vector2D</definition>
+        <argsstring>(const float &amp;x, const float &amp;y)</argsstring>
+        <name>Vector2D</name>
+        <param>
+          <type>const float &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const float &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="62" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_m_l_1_1_vector2_d_1a1ca89d3ad291914b972438af6a9daa27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; RML::Vector2D::roundTo</definition>
+        <argsstring>(const float &amp;pivotX, const float &amp;errorX, const float &amp;pivotY, const float &amp;errorY)</argsstring>
+        <name>roundTo</name>
+        <param>
+          <type>const float &amp;</type>
+          <declname>pivotX</declname>
+        </param>
+        <param>
+          <type>const float &amp;</type>
+          <declname>errorX</declname>
+        </param>
+        <param>
+          <type>const float &amp;</type>
+          <declname>pivotY</declname>
+        </param>
+        <param>
+          <type>const float &amp;</type>
+          <declname>errorY</declname>
+        </param>
+        <briefdescription>
+<para>Rounds the coordinates to the pivot values for X and Y within the ranges of the error values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pivotX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The X pivot. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pivotY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Y pivot. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>errorX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The X error for pivot. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>errorY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Y error for pivot. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="74" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="25" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_m_l_1_1_vector2_d_1a235406fb3743bab4fe5d4ce7ac2695e2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RML::Vector2D::getLength</definition>
+        <argsstring>(Vector2D &amp;vector) const</argsstring>
+        <name>getLength</name>
+        <param>
+          <type><ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+<para>Gets length of vector. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">vector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The length. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="85" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_m_l_1_1_vector2_d_1aea3f43114e90e9a04417e913ba8fba34" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RML::Vector2D::getLength</definition>
+        <argsstring>() const</argsstring>
+        <name>getLength</name>
+        <briefdescription>
+<para>Gets length of this vector. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The length. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="94" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_m_l_1_1_vector2_d_1a4ee16de3591784873a637de7d4a9a117" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D RML::Vector2D::toUnitVector</definition>
+        <argsstring>()</argsstring>
+        <name>toUnitVector</name>
+        <briefdescription>
+<para>Convert this to a unit vector. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The normalised vector. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="103" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_m_l_1_1_vector2_d_1a24a5d8d195ddd7e0e5f27c05a93bf823" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; RML::Vector2D::add</definition>
+        <argsstring>(const Vector2D &amp;other)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Adds other. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other to add.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to a <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="114" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="48" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_m_l_1_1_vector2_d_1a5a4ea7ff7f1036a4fa7d94a67b72c620" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D RML::Vector2D::subtract</definition>
+        <argsstring>(const Vector2D &amp;other)</argsstring>
+        <name>subtract</name>
+        <param>
+          <type>const <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Subtracts the given other. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to a <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="125" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="56" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_m_l_1_1_vector2_d_1a0c18b119beab3d9ee30fb5b86e76d75b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; RML::Vector2D::multiply</definition>
+        <argsstring>(const Vector2D &amp;other)</argsstring>
+        <name>multiply</name>
+        <param>
+          <type>const <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Multiplies the given other. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to a <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="136" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="64" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_m_l_1_1_vector2_d_1a546a699a61147c25f1bf25dfc8b1801b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RML::Vector2D::multiplyDot</definition>
+        <argsstring>(const Vector2D &amp;other)</argsstring>
+        <name>multiplyDot</name>
+        <param>
+          <type>const <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Multiplies the given other vector (Dot product) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A dot product result. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="147" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_m_l_1_1_vector2_d_1a5924353951367561c4a0c234fda6ca7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; RML::Vector2D::multiplyFloat</definition>
+        <argsstring>(const float &amp;other)</argsstring>
+        <name>multiplyFloat</name>
+        <param>
+          <type>const float &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Scale all values of this vector by a float. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Scaled version of this vector. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="158" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="77" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_m_l_1_1_vector2_d_1af6867f3291fa38bb929187ec966390f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; RML::Vector2D::divide</definition>
+        <argsstring>(const Vector2D &amp;other)</argsstring>
+        <name>divide</name>
+        <param>
+          <type>const <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Divides each element of this vector one by one by the corresponding vector of the other vector. Returns [a/x , b/y] if [a , b] is divided by [x , y]. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to a <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="171" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="85" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_m_l_1_1_vector2_d_1a4d39c5e0743400d7d14d0683ff168a5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RML::Vector2D::operator==</definition>
+        <argsstring>(const Vector2D &amp;other)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Equality operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the parameters are considered equivalent. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="266" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_m_l_1_1_vector2_d_1ad0fd2b1ac014d6345224d03f258a1164" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RML::Vector2D::operator!=</definition>
+        <argsstring>(const Vector2D &amp;other)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Inequality operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the parameters are not considered equivalent. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="277" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_m_l_1_1_vector2_d_1a933787f37217402094ecec3f3e3de01c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; RML::Vector2D::operator+=</definition>
+        <argsstring>(const Vector2D &amp;other)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Addition assignment operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="288" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_m_l_1_1_vector2_d_1ae84dd5464e4d694434eaa3686203a85f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D RML::Vector2D::operator-=</definition>
+        <argsstring>(const Vector2D &amp;other)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Subtraction assignment operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="299" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_m_l_1_1_vector2_d_1a4caff2a72c5abc5d89218809d899e90d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; RML::Vector2D::operator*=</definition>
+        <argsstring>(const Vector2D &amp;other)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>const <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Multiplication assignment operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="310" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_m_l_1_1_vector2_d_1a879806aa7dc16c51349208bf7da904e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; RML::Vector2D::operator/=</definition>
+        <argsstring>(const Vector2D &amp;other)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>const <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Division assignment operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="321" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="118" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="struct_r_m_l_1_1_vector2_d_1aaccea35daf914efd450edb08e1357b22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;stream, const Vector2D &amp;vector)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+<para>Put to operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output stream. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector to be put to stream.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="183" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="123" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="friend" id="struct_r_m_l_1_1_vector2_d_1a7d851007ffb272ba5d3f36b4df2be263" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; operator+</definition>
+        <argsstring>(Vector2D left, const Vector2D &amp;right)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref></type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+<para>Addition operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left operand. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right operand.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="195" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="friend" id="struct_r_m_l_1_1_vector2_d_1a69bee8baf7af0d5fe5dfd33a93b103e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D operator-</definition>
+        <argsstring>(Vector2D left, const Vector2D &amp;right)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref></type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+<para>Subtraction operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left operand. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right operand.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="207" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="friend" id="struct_r_m_l_1_1_vector2_d_1a28f234c9603ea4c593ba011aabc8e633" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; operator*</definition>
+        <argsstring>(Vector2D left, const Vector2D &amp;right)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref></type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+<para>Multiplication operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left operand. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right operand.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="219" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="friend" id="struct_r_m_l_1_1_vector2_d_1aab52138a64a79290970de82bed994b66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; operator*</definition>
+        <argsstring>(Vector2D left, const float &amp;right)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref></type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const float &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+<para>Float multiplication operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left operand. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right operand.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="231" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="friend" id="struct_r_m_l_1_1_vector2_d_1a6fca50a7a4c07f54b63d2941953b996b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend float</type>
+        <definition>friendd float RML::Vector2D::operator*</definition>
+        <argsstring>(Vector2D &amp;left, const Vector2D &amp;right)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+<para>Dot multiplication operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left operand. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right operand.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the dot operation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="243" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="149" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="friend" id="struct_r_m_l_1_1_vector2_d_1a27011a9d9baf6c52476d5a5d27ceeea9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; RML::Vector2D::operator/</definition>
+        <argsstring>(Vector2D left, const Vector2D &amp;right)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type><ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref></type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_m_l_1_1_vector2_d" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+<para>Division operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left operand. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right operand.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="255" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/rubeus_maths_library.cpp" bodystart="154" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A vector in 2D. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" line="39" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/rubeus_maths_library.h" bodystart="38" bodyend="322"/>
+    <listofallmembers>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a24a5d8d195ddd7e0e5f27c05a93bf823" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>add</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1af6867f3291fa38bb929187ec966390f2" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>divide</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a235406fb3743bab4fe5d4ce7ac2695e2" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>getLength</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1aea3f43114e90e9a04417e913ba8fba34" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>getLength</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a0c18b119beab3d9ee30fb5b86e76d75b" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>multiply</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a546a699a61147c25f1bf25dfc8b1801b" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>multiplyDot</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a5924353951367561c4a0c234fda6ca7e" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>multiplyFloat</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1ad0fd2b1ac014d6345224d03f258a1164" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>operator!=</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a28f234c9603ea4c593ba011aabc8e633" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>operator*</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1aab52138a64a79290970de82bed994b66" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>operator*</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a6fca50a7a4c07f54b63d2941953b996b" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>operator*</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a4caff2a72c5abc5d89218809d899e90d" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>operator*=</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a7d851007ffb272ba5d3f36b4df2be263" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>operator+</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a933787f37217402094ecec3f3e3de01c" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>operator+=</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a69bee8baf7af0d5fe5dfd33a93b103e2" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>operator-</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1ae84dd5464e4d694434eaa3686203a85f" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>operator-=</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a27011a9d9baf6c52476d5a5d27ceeea9" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>operator/</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a879806aa7dc16c51349208bf7da904e4" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>operator/=</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1aaccea35daf914efd450edb08e1357b22" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>operator&lt;&lt;</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a4d39c5e0743400d7d14d0683ff168a5a" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>operator==</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a1ca89d3ad291914b972438af6a9daa27" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>roundTo</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a5a4ea7ff7f1036a4fa7d94a67b72c620" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>subtract</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a4ee16de3591784873a637de7d4a9a117" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>toUnitVector</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a39ae4a2d20e822527b329683a2bf0dda" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>Vector2D</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1ab7d29d20470e5557b17a84208275eab0" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>Vector2D</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1ab5c3a92e55c53865ba1662ad2beb6ef2" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>x</name></member>
+      <member refid="struct_r_m_l_1_1_vector2_d_1a05f39d7943bb201be12d409246fc7bae" prot="public" virt="non-virtual"><scope>RML::Vector2D</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="nvidia__enable_8h" kind="file" language="C++">
+    <compoundname>nvidia_enable.h</compoundname>
+    <includedby refid="_rubeus_core_8cpp" local="no">/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/RubeusCore.cpp</includedby>
+    <invincdepgraph>
+      <node id="1993">
+        <label>/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/nvidia_enable.h</label>
+        <link refid="nvidia__enable_8h"/>
+        <childnode refid="1994" relation="include">
+        </childnode>
+      </node>
+      <node id="1994">
+        <label>/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/RubeusCore.cpp</label>
+        <link refid="_rubeus_core_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+<para>Allows rendering on the dedicated NVIDIA GPU. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/nvidia_enable.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="object_8ball_8cpp" kind="file" language="C++">
+    <compoundname>object.ball.cpp</compoundname>
+    <includes refid="object_8ball_8h" local="yes">object.ball.h</includes>
+    <incdepgraph>
+      <node id="20">
+        <label>../RubeusCore.h</label>
+      </node>
+      <node id="19">
+        <label>object.ball.h</label>
+        <link refid="object_8ball_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Game/ping_pong/engine_files/object.ball.cpp</label>
+        <link refid="object_8ball_8cpp"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Game/ping_pong/engine_files/object.ball.cpp"/>
+  </compounddef>
+</doxygen>

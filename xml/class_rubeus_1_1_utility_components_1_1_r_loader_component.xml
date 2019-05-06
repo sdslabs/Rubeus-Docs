@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_rubeus_1_1_utility_components_1_1_r_loader_component" kind="class" language="C++" prot="public">
+    <compoundname>Rubeus::UtilityComponents::RLoaderComponent</compoundname>
+    <basecompoundref refid="class_rubeus_1_1_r_master_component" prot="public" virt="non-virtual">Rubeus::RMasterComponent</basecompoundref>
+    <includes refid="loader__component_8h" local="no">loader_component.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_rubeus_1_1_utility_components_1_1_r_loader_component_1a873f7f2d8c1079924a0a9fe5880b34c1" prot="private" static="yes" mutable="no">
+        <type>ILuint</type>
+        <definition>ILuint Rubeus::UtilityComponents::RLoaderComponent::m_ImageID</definition>
+        <argsstring></argsstring>
+        <name>m_ImageID</name>
+        <briefdescription>
+<para>The image name used by DevIL library. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/loader_component.h" line="39" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/loader_component.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_rubeus_1_1_utility_components_1_1_r_loader_component_1ac60e89b57710daf56561422a6cc7ae44" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Rubeus::UtilityComponents::RLoaderComponent::initImageLoader</definition>
+        <argsstring>()</argsstring>
+        <name>initImageLoader</name>
+        <briefdescription>
+<para>Initialise OpenIL/DevIL library for image loading. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/loader_component.h" line="46" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/loader_component.cpp" bodystart="96" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_rubeus_1_1_utility_components_1_1_r_loader_component_1ae4a1a7465d9bb7c0a93a1d17ba59cf1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Rubeus::UtilityComponents::RLoaderComponent::RLoaderComponent</definition>
+        <argsstring>()</argsstring>
+        <name>RLoaderComponent</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/loader_component.h" line="54" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/loader_component.cpp" bodystart="15" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rubeus_1_1_utility_components_1_1_r_loader_component_1a4bad0754f16152c483e7038eee74cfa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Rubeus::UtilityComponents::RLoaderComponent::~RLoaderComponent</definition>
+        <argsstring>()</argsstring>
+        <name>~RLoaderComponent</name>
+        <briefdescription>
+<para>Default destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/loader_component.h" line="61" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/loader_component.cpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rubeus_1_1_utility_components_1_1_r_loader_component_1a6b9ef0187b89c74703d0246c7eb3f320" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Rubeus::UtilityComponents::RLoaderComponent::loadTextFileStream</definition>
+        <argsstring>(const char *filePath)</argsstring>
+        <name>loadTextFileStream</name>
+        <param>
+          <type>const char *</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Loads text file to a string using streams. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>Use only after initialising the image loader through initImageLoader()</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Full pathname of the file.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The text file in a string. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/loader_component.h" line="74" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/loader_component.cpp" bodystart="25" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rubeus_1_1_utility_components_1_1_r_loader_component_1a2ca4414ddba0b63415a14b2844d8a5a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Rubeus::UtilityComponents::RLoaderComponent::onMessage</definition>
+        <argsstring>(Message *msg) override</argsstring>
+        <name>onMessage</name>
+        <reimplements refid="class_rubeus_1_1_r_master_component_1a129a5b04db723423b40cfd4780adcd35">onMessage</reimplements>
+        <param>
+          <type><ref refid="struct_rubeus_1_1_message" kindref="compound">Message</ref> *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Handles the message received. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>Use only with the message system</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the message sent. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/loader_component.h" line="102" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/loader_component.cpp" bodystart="81" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_rubeus_1_1_utility_components_1_1_r_loader_component_1a89475d0ad00bd1da6da5c89bbfccf9ad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_rubeus_1_1_graphic_components_1_1_image" kindref="compound">GraphicComponents::Image</ref></type>
+        <definition>GraphicComponents::Image Rubeus::UtilityComponents::RLoaderComponent::loadImageFile</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>loadImageFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Loads image and returns it in the form of a <ref refid="namespace_rubeus" kindref="compound">Rubeus</ref> Image. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The image file path</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The image object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/loader_component.h" line="85" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/loader_component.cpp" bodystart="64" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rubeus_1_1_utility_components_1_1_r_loader_component_1abecdb15e02d9f2e69efc17549c7b5053" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Rubeus::UtilityComponents::RLoaderComponent::deleteImage</definition>
+        <argsstring>()</argsstring>
+        <name>deleteImage</name>
+        <briefdescription>
+<para>Frees the loaded image data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/loader_component.h" line="92" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Source/loader_component.cpp" bodystart="102" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A loader component. Useful for file I/O. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="221">
+        <label>Rubeus::UtilityComponents::RLoaderComponent</label>
+        <link refid="class_rubeus_1_1_utility_components_1_1_r_loader_component"/>
+        <childnode refid="222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="222">
+        <label>Rubeus::RMasterComponent</label>
+        <link refid="class_rubeus_1_1_r_master_component"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="223">
+        <label>Rubeus::UtilityComponents::RLoaderComponent</label>
+        <link refid="class_rubeus_1_1_utility_components_1_1_r_loader_component"/>
+        <childnode refid="224" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>Rubeus::RMessageBus</label>
+        <link refid="class_rubeus_1_1_r_message_bus"/>
+      </node>
+      <node id="225">
+        <label>Rubeus::RMessageSystem</label>
+        <link refid="class_rubeus_1_1_r_message_system"/>
+        <childnode refid="226" relation="usage">
+          <edgelabel>m_MessageBus</edgelabel>
+        </childnode>
+      </node>
+      <node id="224">
+        <label>Rubeus::RMasterComponent</label>
+        <link refid="class_rubeus_1_1_r_master_component"/>
+        <childnode refid="225" relation="usage">
+          <edgelabel>m_MessageSystem</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/loader_component.h" line="36" column="1" bodyfile="/home/serious/Desktop/SDSLabs/Rubeus/RubeusCore/Include/loader_component.h" bodystart="35" bodyend="105"/>
+    <listofallmembers>
+      <member refid="class_rubeus_1_1_r_master_component_1aa8456741bb2402650fc8726cd6768803" prot="public" virt="non-virtual"><scope>Rubeus::UtilityComponents::RLoaderComponent</scope><name>componentsInitialised</name></member>
+      <member refid="class_rubeus_1_1_utility_components_1_1_r_loader_component_1abecdb15e02d9f2e69efc17549c7b5053" prot="public" virt="non-virtual"><scope>Rubeus::UtilityComponents::RLoaderComponent</scope><name>deleteImage</name></member>
+      <member refid="class_rubeus_1_1_r_master_component_1ada4b85021d96ac2c2153e613d5f14097" prot="public" virt="non-virtual"><scope>Rubeus::UtilityComponents::RLoaderComponent</scope><name>getComponentID</name></member>
+      <member refid="class_rubeus_1_1_r_master_component_1ad3c9003c4bc64661ed9ae5961c8cf3fa" prot="public" virt="non-virtual"><scope>Rubeus::UtilityComponents::RLoaderComponent</scope><name>getName</name></member>
+      <member refid="class_rubeus_1_1_utility_components_1_1_r_loader_component_1ac60e89b57710daf56561422a6cc7ae44" prot="private" virt="non-virtual"><scope>Rubeus::UtilityComponents::RLoaderComponent</scope><name>initImageLoader</name></member>
+      <member refid="class_rubeus_1_1_utility_components_1_1_r_loader_component_1a89475d0ad00bd1da6da5c89bbfccf9ad" prot="public" virt="non-virtual"><scope>Rubeus::UtilityComponents::RLoaderComponent</scope><name>loadImageFile</name></member>
+      <member refid="class_rubeus_1_1_utility_components_1_1_r_loader_component_1a6b9ef0187b89c74703d0246c7eb3f320" prot="public" virt="non-virtual"><scope>Rubeus::UtilityComponents::RLoaderComponent</scope><name>loadTextFileStream</name></member>
+      <member refid="class_rubeus_1_1_r_master_component_1a838bceba7935bb3b11a5b69def0f0fc0" prot="protected" virt="non-virtual"><scope>Rubeus::UtilityComponents::RLoaderComponent</scope><name>m_ComponentID</name></member>
+      <member refid="class_rubeus_1_1_utility_components_1_1_r_loader_component_1a873f7f2d8c1079924a0a9fe5880b34c1" prot="private" virt="non-virtual"><scope>Rubeus::UtilityComponents::RLoaderComponent</scope><name>m_ImageID</name></member>
+      <member refid="class_rubeus_1_1_r_master_component_1aedb604c4ddfb8d2ba72ff493a74b7025" prot="public" virt="non-virtual"><scope>Rubeus::UtilityComponents::RLoaderComponent</scope><name>m_MessageSystem</name></member>
+      <member refid="class_rubeus_1_1_utility_components_1_1_r_loader_component_1a2ca4414ddba0b63415a14b2844d8a5a6" prot="public" virt="virtual"><scope>Rubeus::UtilityComponents::RLoaderComponent</scope><name>onMessage</name></member>
+      <member refid="class_rubeus_1_1_utility_components_1_1_r_loader_component_1ae4a1a7465d9bb7c0a93a1d17ba59cf1c" prot="public" virt="non-virtual"><scope>Rubeus::UtilityComponents::RLoaderComponent</scope><name>RLoaderComponent</name></member>
+      <member refid="class_rubeus_1_1_r_master_component_1aecd982f5c7361dbb23bcc8ac5ec6481c" prot="public" virt="non-virtual"><scope>Rubeus::UtilityComponents::RLoaderComponent</scope><name>RMasterComponent</name></member>
+      <member refid="class_rubeus_1_1_utility_components_1_1_r_loader_component_1a4bad0754f16152c483e7038eee74cfa4" prot="public" virt="non-virtual"><scope>Rubeus::UtilityComponents::RLoaderComponent</scope><name>~RLoaderComponent</name></member>
+      <member refid="class_rubeus_1_1_r_master_component_1a03a8ba150ef34447b3c7d22f10dca93a" prot="public" virt="virtual"><scope>Rubeus::UtilityComponents::RLoaderComponent</scope><name>~RMasterComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
